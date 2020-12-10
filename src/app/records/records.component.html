@@ -1,0 +1,17 @@
+<div *ngIf="!records">
+    Please add a record!
+    </div>
+<div *ngIf="records">
+    <table>
+        <th>Date</th>
+        <th>Username</th>
+        <th>Phone Access Time</th>
+        <th>Mood</th>
+        <tr *ngFor="let detail of records">
+            <td>{{detail.date}}</td>
+            <td>{{detail.tos}}</td>
+            <td>{{detail.wut}}</td>
+            <td>{{detail.mood}}</td>
+        </tr>
+    </table>
+</div>

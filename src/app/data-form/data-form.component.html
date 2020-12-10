@@ -1,0 +1,16 @@
+<label for="Date">Date:</label>
+<input type="date"  [formControl]="date"> <br>
+<label >Username:</label>
+<input type="text"  [formControl]="tos"> <br>
+<label >Phone Access Time:</label>
+<input type="number"  [formControl]="wut"><br>
+<label >Moods:</label> 
+<select name="cars" id="cars" [formControl]='mood'>
+    <option value="good">Good</option>
+    <option value="average">Average</option>
+    <option value="best">Best</option>
+  
+  </select><br>
+
+
+  <button (click)="submitData()">Submit</button>
